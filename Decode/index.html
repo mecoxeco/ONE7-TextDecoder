@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Textos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-... seu código de integridade ..." crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <h1>Decodificador de Textos</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <label for="texto">Texto:</label>
+            <textarea id="texto" rows="4" cols="50"></textarea>
+
+            <div class="buttons">
+                <button onclick="criptografarTexto()">Criptografar</button>
+                <button onclick="descriptografarTexto()">Descriptografar</button>
+                <button onclick="copiarResultado()">Copiar Resultado</button>
+            </div>
+
+            <label for="resultado">Resultado:</label>
+            <textarea id="resultado" rows="4" cols="50" readonly></textarea>
+        </div>
+
+        <!-- Botão "Revelar Chave Criptográfica" -->
+        <button id="btnRevelarChave" class="modal-button" onclick="abrirModalChave()">🖤 Guia do Decodificador 🖤
+        </button>
+    </main>
+
+    <footer>
+        <p>Feito por Otávio Perez</p>
+        <div class="social-icons">
+            <a href="https://github.com/mecoxeco" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/otavioluquejs/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!-- Modal Chave Criptográfica -->
+    <div id="modalChave" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModalChave()">&times;</span>
+            <h2>🖤 Guia do Decodificador 🖤</h2>
+            <p>A letra "e" é convertida para "enter"<br>
+                A letra "i" é convertida para "imes"<br>
+                A letra "a" é convertida para "ai"<br>
+                A letra "o" é convertida para "ober"<br>
+                A letra "u" é convertida para "ufat"<br>
+                <br>Área de texto<br>
+                Encontre a área de texto identificada como "Texto:" logo abaixo do cabeçalho.
+                Nesta área, você pode inserir o texto que deseja criptografar ou descriptografar.<br>
+                <br>Criptografar<br>
+                Ao clicar neste botão, o texto inserido será criptografado conforme a chave
+                especificada.<br>
+                <br>Descriptografar<br>
+                Clicar neste botão desfaz a criptografia aplicada ao texto, retornando-o ao texto
+                original.<br>
+                <br>Copiar Resultado<br> Este botão copia o texto resultante (criptografado ou descriptografado) para a
+                área de
+                transferência do seu dispositivo.<br>
+                <br>área de resultado<br>
+                Esta área exibirá o texto resultante após a aplicação das ações de criptografia ou descriptografia.<br>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

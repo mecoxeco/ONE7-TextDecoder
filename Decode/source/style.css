@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'CamingoMono';
+    src: local('CamingoMono SemiBold'), local('CamingoMono-SemiBold'),
+        url('CamingoMono-SemiBold.woff2') format('woff2'),
+        url('CamingoMono-SemiBold.woff') format('woff'),
+        url('CamingoMono-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
