@@ -1,2 +1,3 @@
-# DesafioONE7
-Repositório do desafio do Oracle ONE 7 - Decodificador de Texto 
+# ONE7-TextDecoder
+
+Code Challenge by ORACLE ONE
